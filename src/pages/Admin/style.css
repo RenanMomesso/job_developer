@@ -1,0 +1,25 @@
+.adicionar_foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img_arrastar {
+    margin-top: 0px;
+}
+.linkings {
+    padding: 10px;
+    box-shadow: 0.2px 0.2px gray;
+}
+
+@media only screen and (max-width: 600px) {
+  .adicionar_foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .img_arrastar {
+      margin-top: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.signup_formulario {
+    display:flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+.editar_perfil {
+    width: 500px;
+}
+@media only screen and (max-width: 600px) { 
+.container-fluid .row{
+    margin: 0px;
+    padding: 0px;
+}
+
+    .signup_formulario {
+        display:flex;
+        width: 90%;
+        padding-left: 10px !important;
+        margin-left: 10px !important;
+        flex-direction: column;
+    }
+    .editar_perfil {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .adminlinks div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

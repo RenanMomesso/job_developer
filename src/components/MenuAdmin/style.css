@@ -1,0 +1,22 @@
+.linkings .list-group .list-group-item .nav-link:hover {
+  color: black;
+}
+.linkings .list-group .list-group-item:hover {
+  border: 1px solid black;
+}
+.linkings .list-group .list-group-item {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.adminlinks {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .adminlinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+ }

@@ -1,0 +1,617 @@
+body,
+html,
+#root {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/* ///////////////////////////////////////////////// menu topo de tudo da tela ////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////// embaixo de menu principal \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.image_background {
+  background-image: url("/assets/lojabg.jpg");
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.logo_titulo {
+  /* font-family: "Yellowtail", cursive; */
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 86px;
+  letter-spacing: 2px;
+  background: linear-gradient(to top, #3d3b29, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  -webkit-font-smoothing: antialised !important;
+  /* text-shadow: 1px 1px black; */
+  text-align: center;
+  width: 100%;
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: black;  */
+}
+.logo_titulo::after {
+  content: "";
+  width: 100px;
+  height: 10px;
+}
+.logo_titulo::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+}
+
+.menu_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.image_hover_capa {
+  background-image: url("/assets/capa.png");
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  transition: all 0.9s ease;
+  width: 200px;
+  position: relative;
+  z-index: 999 !important;
+}
+.image_hover_capa h2 {
+  text-shadow: 1px 1px black;
+  width: 210px;
+  margin-top: -10px !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 30px;
+  -webkit-font-smoothing: antialised !important;
+  font-stretch: expanded;
+  color: white;
+}
+.image_hover_capa:hover {
+  background-image: url("/assets/capa.png");
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  transition: all 0.9s ease;
+  width: 200px;
+  position: relative;
+  z-index: 999 !important;
+}
+
+/* /////////////////////////////////////////////// nav bar menu abaixo da foto principal ////////////////////////////////////// */
+
+li a {
+  text-decoration: none;
+}
+li a:hover {
+  color: white;
+}
+
+.borda {
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.9;
+  opacity: 1;
+  z-index: 0;
+  text-indent: 0%;
+  justify-content: center;
+  margin: 0;
+}
+.borda li {
+  font-size: 25px;
+  margin-right: 70px;
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  box-shadow: 1px 1px white !important;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+a::after {
+  content: "";
+  width: 140px;
+  height: 20px;
+}
+
+.borda {
+  list-style: none;
+}
+
+.wave {
+  margin: 0;
+  background-image: url("/assets/stylish-hr.webp");
+  border: 0;
+  background-position: 22% 68%;
+  height: 10px;
+}
+
+/* //////////////////////////////////////////////// body ////////////////////////////////////// */
+
+.body_body {
+  width: 100%;
+  height: auto;
+}
+
+.carrossel_paginainicial {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  margin-top: 40px;
+  background-image: url("/assets/capa.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  /* margin-left: 10px;
+  margin-top: 20px; */
+}
+
+.roupascategorias {
+  width: 100%;
+  margin-top: 10px;
+
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* //////// body esquerdo categorias e filtros \\\\\\\\\\\\\\\\\\ */
+
+.pagination {
+  width: 100%;
+  margin-top: 20px !important;
+  padding-right: 20px;
+  max-width: 1300px;
+  margin-right: 20px;
+  display: flex;
+  margin-left: 20px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.body_esquerda {
+  width: 210px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.filtro_quadradao {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-height: 330px;
+}
+.filtro_quadradao + .filtro_quadradao {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 330px;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  height: 2px !important;
+  background: rgba(0, 0, 0, 0.438);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.filtro_topo {
+  font-size: 14px;
+  width: 60%;
+  margin-bottom: 5px !important;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.filtro_topo + .filtro_topo {
+  cursor: pointer;
+  font-size: 14px;
+  height: 20%;
+  width: 60%;
+}
+
+.filtro_corpo {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+.body_direita {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0px;
+  flex-wrap: wrap;
+}
+
+/* //////////////////////////////// card \\\\\\\\\\\\\\\\\\\\\ */
+
+.card {
+  width: 23% !important;
+  height: 400px;
+  margin-right: 8px;
+}
+.card_image {
+  height: 316px !important;
+}
+.img_src {
+  width: 100%;
+  height: 316px;
+}
+.card_body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.card_body_price,
+.card_body_title {
+  color: rgb(33, 33, 33);
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 14px;
+  max-height: 29px;
+  height: 29px;
+  overflow: hidden;
+}
+
+.card_body_price {
+}
+
+.card a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* ///////////////////////////// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ foooooteeeeeeeer @@@@@@@@@@@@@@@@@@@@@@@@@@@ \\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.container_footer {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0;
+
+  background-color: rgba(211, 211, 211, 0.678);
+  max-height: 300px;
+}
+.container_dentro_footer {
+  padding: 20px 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container_footer_box {
+  width: 34%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+footer {
+  background-color: rgba(224, 227, 230, 0.548);
+  width: 100%;
+  bottom: 0;
+  margin-top: 20px;
+  font-weight: lighter;
+  color: rgba(52, 73, 94, 1);
+}
+.rowsfooter {
+  display: flex;
+  flex-direction: row;
+}
+.footerHeader {
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(224, 227, 230, 0.548);
+  margin-top: 40px !important;
+  text-align: center;
+  color: rgba(52, 73, 94, 1);
+}
+footer h3 {
+  font-weight: lighter;
+}
+footer ul {
+  padding-left: 5px;
+  list-style: none;
+}
+footer p {
+  text-align: justify;
+  font-size: 12px;
+}
+footer iframe {
+  width: 100%;
+  position: relative;
+  height: 170px;
+}
+.sm {
+  list-style: none;
+  overflow: auto;
+}
+.sm li {
+  display: inline;
+  padding: 5px;
+  float: left;
+}
+.sm li a img {
+  width: 32px;
+}
+
+/* ///////////////////////////////////////////// image-gallery-image" //////////////////////// */
+
+.product_image {
+  display: flex;
+  flex-direction: row;
+}
+.product_details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 1300px;
+}
+.image-gallery-image,
+.image-gallery-slide-wrapper left {
+  width: 100% !important;
+}
+.productcarrosel {
+  min-width: 600px;
+  max-width: 601px;
+}
+
+.product_info_div {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productInfo_style {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.descri {
+  background-color: lightgoldenrodyellow;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+}
+
+/* ////////////////////////////////////////////// heart icon /// */
+
+.heart-icon {
+  text-shadow: 1px black;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: black !important;
+}
+
+.th_foto {
+  padding-left: 100px;
+}
+.th_pagina {
+  padding-left: 25px;
+}
+
+.th_favoritos {
+  padding-left: 50px;
+}
+.botao_remover {
+  padding-left: 65px !important;
+}
+
+.image_cada_carousel {
+  min-width: 245px;
+  max-width: 245px;
+  height: 300px;
+  margin-right: 1px;
+}
+
+.card_cada_carousel {
+    display:flex;
+    flex-direction:column;
+    min-width:245px;
+}
+
+/* ///////////////////////////////////// @@@@@@@@@@@@@@@@ CELULAR @@@@@@@@@@@@@@@@@@@@@@@@@ \\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 600px) {
+  .rowsfooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .gallery_box {
+    display: none !important;
+  }
+  .roupascategorias {
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .body_esquerda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: flex-start;
+  }
+  .botoes_opções div {
+    margin-left: 0px !important;
+    justify-content: flex-start !important;
+  }
+
+  .botoes_opções {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .paginatao {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .body_direita {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .pagination {
+    max-width: 400px !important;
+    width: 70%;
+
+  }
+  .card {
+    max-width: 46% !important;
+    width: 46% !important;
+    height: auto;
+    margin-top: 20px !important;
+    margin-right: 10px;
+  }
+
+.card_image {
+  height: auto;
+  max-height: 200px !important;
+}
+.img_src {
+  max-height: 200px !important;
+  height: auto;
+  min-height: 200px !important;
+}
+
+  .filtro_topo {
+    font-size: 15px;
+    cursor:pointer;
+    width: 100% !important;
+  }
+  .product_details {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px !important;
+    min-width: 300px !important;
+  }
+  .productDetail_css {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding-left: 20px;
+  }
+  .div_detail_product {
+    max-width: 400px;
+  }
+  .product_info_div {
+    display: flex;
+    margin-left: 0px !important;
+    flex-direction: column;
+    max-width: 300px;
+  }
+ 
+  .image-gallery-slide div,
+  .image-gallery-slides,
+  .image-gallery-slide-wrapper,
+  .image-gallery-content,
+  .image-gallery
+   {
+    max-width: 350px !important;
+    margin-bottom: 10px;
+    margin-left: 0px !important;
+  }
+  .image-gallery-image {
+    width: 450px;
+    object-fit: cover !important;
+  }
+  .product_image {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 350px !important;
+  }
+  .productcarrosel {
+    min-width: 350px;
+    max-width: 350px;
+  }
+  .image-gallery-icon,
+  .image-gallery-svg {
+    height: 10px;
+  }
+  .productInfo_style {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+  .WhatsappIcon {
+    border: 1px solid black;
+  }
+
+  .image_cada_carousel {
+    min-width: auto !important;
+    max-width: auto !important;
+    min-height: 195px !important;
+    height: 190px;
+    margin-right: 5px;
+  }
+  .card_cada_carousel {
+    display:flex;
+    flex-direction:column;
+    min-height:180px;
+    min-width: auto !important;
+}
+}

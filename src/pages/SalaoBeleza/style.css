@@ -1,0 +1,212 @@
+.salao_de_beleza {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #009688 !important;
+  text-shadow: 1px 1px wheat;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.425);
+}
+
+.box_esquerdo_texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: 100% !important;
+}
+
+.box_small {
+  width: 300px;
+  overflow: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  text-align:justify;
+}
+
+.horarios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    
+    
+
+}
+.box_horarios {
+    background-color: rgba(255, 255, 255, 0.425);
+    height: 100px;
+    width: 33%;
+    padding: 10px;
+    display: flex;
+    color: #009688;
+    flex-direction: row;
+}
+.cor_de_fundo_salao {
+  background-color: rgba(92, 79, 79, 0.384);
+  padding:20px;
+}
+.images_examples {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.imagesexample_div {
+  width: 30%;
+  height: 300px;
+}
+.div_image1 {
+height: 260px !important;
+/* width: 400px !important; */
+background: url('/assets/maquiagem.jpg');
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.div_image2 {
+height: 260px !important;
+/* width: 400px !important; */
+background: url('/assets/download.jpg');
+display: flex;
+justify-content: center;
+align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.div_image3 {
+height: 260px !important;
+/* width: 400px !important; */
+background-size: contain;
+background: url('/assets/unhas.jpg');
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.div_descr {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: rgba(240, 248, 255, 0.582);
+width: 100%;
+color: rgba(0, 0, 0, 0.637);
+font-weight: 900;
+letter-spacing: 4px;
+}
+.div_image_ladotexto {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+ /* ////////////////////////////////////////////////////////////// @@@@@@@@@@@@@@@@@@@@@ CELULAR @@@@@@@@@@@@@@@@@@@@@@ \\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 600px) {
+.div_image_ladotexto {
+  width: 100%;
+}
+
+.images_examples {
+  display: flex;
+  flex-direction: column;
+}
+
+.horarios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2px;
+  
+
+}
+.box_horarios {
+  background-color: rgba(255, 255, 255, 0.425);
+  height: 100px;
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 1px solid darkgray;
+  padding: 10px;
+  display: flex;
+  color: #009688;
+  flex-direction: row;
+}
+
+.salao_de_beleza {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  color: #009688 !important;
+  text-shadow: 1px 1px wheat;
+  font-weight: 900;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.425);
+}
+.box_esquerdo_texto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  max-width: 100%;
+  height: 100% !important;
+}
+.box_esquerdo_texto h1 {
+  width: 100%;
+  overflow: auto;
+  text-align: justify;
+}
+.box_esquerdo_texto small {
+  width: 100%;
+  font-size: 20px;
+}
+
+.images_examples {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.imagesexample_div {
+  width: 100%;
+  height: 300px;
+}
+.div_image1 {
+  height: 260px !important;
+  height: 270px !important;
+  width: auto;
+  padding-left: 0;
+  background: url('/assets/maquiagem.jpg');
+  }
+
+
+  .div_image2 {
+    height: 260px !important;
+    height: 270px !important;
+    width: auto;
+    padding-left: 0;
+  background: url('/assets/download.jpg');
+    }
+    .div_image3 {
+      height: 260px !important;
+      height: 270px !important;
+      width: auto;
+      padding-left: 0;
+    background: url('/assets/unhas.jpg');
+    }
+}
