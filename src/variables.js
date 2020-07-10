@@ -1,2 +1,2 @@
-export const API = "http://localhost:8000/api"
-export const APIIMAGE = "http://localhost:8000"
+export const API = process.env.API
+export const APIIMAGE = process.env.APIIMAGE
