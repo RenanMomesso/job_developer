@@ -5,7 +5,7 @@ import ProdutDetail from "./ProductDetail/ProductDetail";
 import { Row, Col } from "antd";
 import Layout from "../../components/Layout";
 import CarouselProps from "../../components/CarouselProps";
-import { API } from "../../variables";
+import { API } from "../../config";
 
 function DetailProduct(props) {
   const productId = props.match.params.id;

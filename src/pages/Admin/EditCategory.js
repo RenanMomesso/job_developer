@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { isAuth } from "../../helpers/storage";
 import axios from "axios";
 import Layout from "../../components/Layout";
-import { API } from "../../variables";
+import { API } from "../../config";
 
 const EditCategory = (props) => {
   const [name, setName] = useState("");

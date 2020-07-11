@@ -4,7 +4,7 @@ import Dropzone from "react-dropzone";
 import Layout from "../../components/Layout";
 import { useHistory } from "react-router-dom";
 import './style.css'
-import { API,APIIMAGE } from "../../variables";
+import { API,APIIMAGE } from "../../config";
 
 
 function CreateProduct() {

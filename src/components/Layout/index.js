@@ -4,7 +4,7 @@ import { isAuth, signout } from "../../helpers/storage";
 import { useHistory } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
-import { API, APIIMAGE } from "../../variables";
+import { API, APIIMAGE } from "../../config";
 import queryString from "query-string";
 import NewsLetter from "../NewsLetter";
 

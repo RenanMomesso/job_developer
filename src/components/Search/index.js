@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import queryString from "query-string";
 import { Link } from "react-router-dom";
-import { API, APIIMAGE } from "../../variables";
+import { API, APIIMAGE } from "../../config";
 
 // import { Container } from './styles';
 

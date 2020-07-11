@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { isAuth } from "../../helpers/storage";
 import { HeartFilled, HeartOutlined } from "@ant-design/icons";
 import axios from "axios";
-import { API, APIIMAGE } from "../../variables";
+import { API, APIIMAGE } from "../../config";
 
 function FavoriteAction(props) {
   const userId = isAuth() ? isAuth()._id : null;

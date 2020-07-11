@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Link} from 'react-router-dom'
-import {API, APIIMAGE} from '../../variables'
+import {API, APIIMAGE} from '../../config'
 import '../Carousel/carousel.css'
 
 const Carousel = (props) => {

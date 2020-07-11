@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { API,APIIMAGE } from "../../variables";
+import { API,APIIMAGE } from "../../config";
 import CheckBox from "./Sections/Checkbox";
 import { cor, price, sexo, tamanho } from "./Sections/data";
 import RadioBox from "./Sections/RadioBox";

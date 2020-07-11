@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactGallery from "react-image-gallery";
-import { APIIMAGE } from "../../../variables";
+import { APIIMAGE } from "../../../config";
 
 const ProductImage = (props) => {
   const [Images, setImages] = useState([]);

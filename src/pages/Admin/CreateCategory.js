@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { isAuth } from "../../helpers/storage";
 import axios from "axios";
 import Layout from "../../components/Layout";
-import { API,APIIMAGE } from "../../variables";
+import { API,APIIMAGE } from "../../config";
 
 const AddCategory = () => {
   const [name, setName] = useState("");

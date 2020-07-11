@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Layout from "../../components/Layout";
 import { Link } from "react-router-dom";
-import { APIIMAGE,API } from "../../variables";
+import { APIIMAGE,API } from "../../config";
 
 // import { Container } from './styles';
 

@@ -1,0 +1,2 @@
+export const API = process.env.API ? process.env.API : "https://julianastorestudio.herokuapp.com/api"
+export const APIIMAGE = process.env.APIIMAGE ? process.env.APIIMAGE : "https://julianastorestudio.herokuapp.com/api" 

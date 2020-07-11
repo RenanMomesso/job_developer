@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { isAuth, getCookie } from "../../helpers/storage";
 import { read } from "../../helpers/api";
 import axios from "axios";
-import { API } from "../../variables";
+import { API } from "../../config";
 
 
 function EditProfile() {

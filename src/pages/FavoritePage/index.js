@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import axios from "axios";
 import { isAuth } from "../../helpers/storage";
 import { useHistory,Link} from 'react-router-dom'
-import { APIIMAGE,API } from "../../variables";
+import { APIIMAGE,API } from "../../config";
 
 function FavoritePage() {
   const history = useHistory()

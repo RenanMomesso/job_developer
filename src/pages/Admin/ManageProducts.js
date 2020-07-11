@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/Layout";
-import { API, APIIMAGE } from "../../variables";
+import { API, APIIMAGE } from "../../config";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
 // import { Container } from './styles';
