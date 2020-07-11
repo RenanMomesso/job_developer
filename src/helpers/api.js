@@ -1,4 +1,4 @@
-const API = process.env.API;
+const API = process.env.API ? process.env.API : "https://julianastorestudio.herokuapp.com/api"
 
 
 export const signup = (form) => {
