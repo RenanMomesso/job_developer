@@ -18,7 +18,7 @@ const Carousel = () => {
   }, []);
 
   const getProducts = (variables) => {
-    axios.post(`${API}/getProducts`, variables).then((response) => {
+    axios.post(`${process.env.API}/getProducts`, variables).then((response) => {
       if (response.data.success) {
         setImages([...images, ...response.data.products]);
       } else {
