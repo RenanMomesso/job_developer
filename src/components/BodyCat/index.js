@@ -79,7 +79,6 @@ function Body(props) {
         array = data[key].array;
       }
     }
-    console.log("array", array);
     return array;
   };
 
@@ -158,7 +157,6 @@ function Body(props) {
   }
 
 
-  {console.log("products total", Products.length)}
   const renderCards = Products.length == 0 ? <div>Não encontrou nenhum produto com este filtro ou esta categoria, por favor, procure por outra categoria ou filtro.</div> : Products.map((product, index) => (
     <div key={index} className="card" style={{ marginTop: 20 }} onClick={e=>handleClick(product._id)}>
       <Link to={`/product/${product._id}`}>

@@ -43,13 +43,13 @@ function CreateProduct() {
   const [Images, setImages] = useState([]);
   const [Categories, setCategories] = useState([]);
   const [CategoriesValue, setCategoriesValues] = useState("")
+  const [Quantidade, setQuantidade] = useState("")
 
   const getAllCategories = () => {
     axios
       .get(API+"/categories")
       .then((response) => {
         setCategories(response.data.categories)
-        console.log(response.data.categories)
       }).catch(err => console.log(err))
   };
 
@@ -85,7 +85,8 @@ function CreateProduct() {
       cor: Cores,
       sexo: Sexo,
       tamanho: Tamanho,
-      category: CategoriesValue
+      category: CategoriesValue,
+      quantity:Quantidade
     };
     
     
@@ -206,6 +207,21 @@ function CreateProduct() {
           value={Preco}
           className="form-control"
           placeholder="45.00 (não usar virgula)"
+        />
+      </div>
+
+      <div className="form-group">
+        <label className="text-muted" htmlFor="quantidade">
+          Quantidade
+        </label>
+        <input
+          type="text"
+          id="quantidade"
+          required
+          onChange={(e) => setQuantidade(e.currentTarget.value)}
+          value={Quantidade}
+          className="form-control"
+          placeholder="Quantidade do mesmo produto"
         />
       </div>
 

@@ -68,10 +68,13 @@ function FavoritePage() {
                   <tbody key={i}>
                     <tr>
                       <td>
+                        <a href={`/product/${p._id}`}>
+
                         <img
                           src={`${APIIMAGE}/${p.images[0]}`}
                           style={{ height: 70, width: 70 }}
-                        />
+                          />
+                          </a>
                       </td>
                       <td>{p.title}</td>
                       <td>R$: {p.price}</td>

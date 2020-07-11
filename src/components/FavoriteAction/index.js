@@ -26,7 +26,7 @@ function FavoriteAction(props) {
 
   useEffect(() => {
       axios
-      .post("http://localhost:8000/api/favoriteNumber", variables)
+      .post(API+"/favoriteNumber", variables)
       .then((response) => {
         if (response.data.success) {
           setFavoriteNumber(response.data.favoriteNumber);
@@ -38,7 +38,7 @@ function FavoriteAction(props) {
 
 
       axios
-      .post(`http://localhost:8000/api/favorited`, variables)
+      .post(`${API}/favorited`, variables)
       .then((response) => {
         if (response.data.success) {
           setFavorited(response.data.favorited);

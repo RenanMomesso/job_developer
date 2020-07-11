@@ -13,7 +13,6 @@ function Search() {
 
   const searchFilter = (palavra) => {
     const query = queryString.stringify(palavra);
-    console.log("query", query);
     return fetch(`${API}/product/search?${query}`, {
       method: "GET",
     })

@@ -31,7 +31,6 @@ export const removeLocalStorage = (key) => {
 }
 
 export const authenticate = (response, next) => {
-    console.log('authenticate helper => response', response)
     setCookie("token", response.token)
     setLocalStorage('user', response.user)
     next();
@@ -58,7 +57,6 @@ export const signout = (next) => {
 }
 
 export const updateUser = (response,next) => {
-    console.log('respone from updateuser', response);
 
     if(window !== "undefined"){
         let auth = JSON.parse(localStorage.getItem("user"))

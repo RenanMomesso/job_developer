@@ -6,7 +6,6 @@ import BodyCat from "../../components/BodyCat";
 function CategoriaOne(props) {
   const categoryName = props.match.params.name;
 
-  console.log(categoryName)
 
   return (
     <Layout>

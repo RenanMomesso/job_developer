@@ -18,7 +18,7 @@ const Carousel = () => {
   }, []);
 
   const getProducts = (variables) => {
-    axios.post(`${process.env.API}/getProducts`, variables).then((response) => {
+    axios.post(`https://julianastorestudio.herokuapp.com/api/getProducts`, variables).then((response) => {
       if (response.data.success) {
         setImages([...images, ...response.data.products]);
       } else {
@@ -106,13 +106,13 @@ const Carousel = () => {
                 onClick={(e) => handleClick(image._id)}
                 className="card_cada_carousel"
               >
-                <Link to={`/product/${image._id}`}>
+                <a href={`/product/${image._id}`}>
                   <img
-                    src={`${APIIMAGE}/${image.images[0]}`}
+                    src={`https://julianastorestudio.herokuapp.com/${image.images[0]}`}
                     alt={image.title}
                     className="image_cada_carousel"
                   />
-                </Link>
+                </a>
                 <span>{image.title}</span>
                 <span>R$:{image.price}</span>
               </div>

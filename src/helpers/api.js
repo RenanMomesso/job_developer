@@ -1,4 +1,4 @@
-const API = 'http://localhost:8000/api'
+const API = process.env.API;
 
 
 export const signup = (form) => {

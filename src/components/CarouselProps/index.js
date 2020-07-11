@@ -28,10 +28,9 @@ const Carousel = (props) => {
   }, []);
 
   const getProducts = (productId, categoryId) => {
-   axios.get(`http://localhost:8000/api/products/related/${productId}?category=${categoryId}`)
+   axios.get(`${API}/products/related/${productId}?category=${categoryId}`)
    .then(response => {
      setImages([...images, ...response.data])
-     console.log(response.data)
    })
   };
 
@@ -114,13 +113,13 @@ const Carousel = (props) => {
                     onClick={(e) => handleClick(image._id)}
                     className="card_cada_carousel"
                   >
-                    <Link to={`/product/${image._id}`}>
+                    <a href={`/product/${image._id}`}>
                       <img
                         src={`${APIIMAGE}/${image.images[0]}`}
                         alt={image.title}
                         className="image_cada_carousel"
                       />
-                    </Link>
+                    </a>
                     <span>{image.title}</span>
                     <span>R$:{image.price}</span>
                   </div>
